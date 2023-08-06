@@ -1,4 +1,4 @@
-
+#
 #
 #
 # Euler's identity: e^(pi*i) = -1
@@ -14,7 +14,6 @@ z = cmath.exp(exp)
 
 print ("The real part of complex number is : ", z.real)
 print ("The imaginary part of complex number is : ", z.imag)
-
 
 # Evaluate iteratively
 
