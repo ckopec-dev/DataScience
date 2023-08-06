@@ -1,7 +1,8 @@
 #
 #
 #
-# Power of 2 series convergence: 1 + 1/2 + 1/4 + 1/8 + ... converges to 2.
+# Power of 2 series convergence: 
+# 1 + 1/2 + 1/4 + 1/8 + ... converges to 2.
 #
 #
 #
