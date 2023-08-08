@@ -19,3 +19,10 @@ def Basel(exp, terms):
     for n in range (1, terms + 1):
         val = val + (1 / n ** exp)
     return val
+
+def Zeta(s, terms):
+    val = complex(0, 0)
+    for n in range(1, terms + 1):
+        val = val + (1 / n ** s)
+    return val
+
