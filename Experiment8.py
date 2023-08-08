@@ -15,8 +15,8 @@ calcs = []
 
 for n in N:
     logN = math.log(n)
-    nOverN = NoverN(n)
-    error = ((logN - nOverN) / nOverN) * 100
-    calcs.append([n, logN, nOverN, error])
+    nOverPiN = NoverPiN(n)
+    error = ((logN - nOverPiN) / nOverPiN) * 100
+    calcs.append([n, logN, nOverPiN, error])
     
-print(tabulate(calcs, headers=['N', 'log N', 'N over n(N)', '% error']))
+print(tabulate(calcs, headers=['N', 'log(N)', 'N/Pi(N)', '% error']))
