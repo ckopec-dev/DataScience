@@ -33,9 +33,14 @@ def Zeta(s, terms):
 def LogIntegral(x, terms):
     # https://math.stackexchange.com/questions/700391/integration-by-parts-of-the-logarithmic-integral
     # li(x) = Ei(lnx) = (γ + ln(lnx)) + [the cumulative sum from n=1 to infinity of: ((lnx)^n)/(n*n!)]
+    if x <= 0:
+        return math.nan 
     y = 0.5772156649015328606065120
-    val = y + math.log(math.log(x))
+    l1 = math.log(x)
+    if l1 <= 0:
+        return math.nan
+    val = y + math.log(l1)
     for n in range(1, terms + 1):
-        val = val + ((math.log(x))**n)/(n*(math.factorial(n)))
-    if x > 2: val = val - 1.04516378011749278
+        val = val + (l1**n)/(n * math.factorial(n))
+    #if x > 2: val = val - 1.04516378011749278
     return val
