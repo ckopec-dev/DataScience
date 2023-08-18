@@ -9,7 +9,5 @@
 #
 
 from Helper import *
-import math, cmath
 
-print(Zeta(complex(1.1, 0), 1000000))
-print(Zeta(complex(1.5, 0), 1000000))
+print(Zeta(-1, 8))

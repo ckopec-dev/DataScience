@@ -9,4 +9,6 @@ python3 Experiment7.py
 python3 Experiment8.py
 python3 Experiment9.py
 python3 Experiment10.py
-python3 Experiment11py
+python3 Experiment11.py
+python3 Experiment12.py
+python3 Experiment13.py
