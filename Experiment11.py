@@ -21,4 +21,5 @@ for i in range(0, ypoints.shape[0]):
 
 plt.plot(xpoints, ypoints)
 plt.show()
+plt.savefig("Experiment11.png")
 

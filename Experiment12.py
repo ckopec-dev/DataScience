@@ -22,3 +22,4 @@ plt.plot(xpoints, ypoints1)
 plt.plot(xpoints, ypoints2)
 
 plt.show()
+plt.savefig("Experiment12.png")
