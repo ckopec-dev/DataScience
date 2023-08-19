@@ -1,7 +1,7 @@
 #
 #
 #
-# Mandelbrot set
+# Mandelbrot set: basic scatter
 # Ref: https://realpython.com/mandelbrot-set-python/
 #
 #
