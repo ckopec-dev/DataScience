@@ -49,5 +49,7 @@ plt.scatter(members.real, members.imag, color="black", marker=",", s=1)
 plt.gca().set_aspect("equal")
 plt.axis("off")
 plt.tight_layout()
-plt.show()
+
 plt.savefig("Experiment13.png")
+plt.show()
+

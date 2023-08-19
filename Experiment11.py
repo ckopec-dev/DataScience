@@ -20,6 +20,6 @@ for i in range(0, ypoints.shape[0]):
     ypoints[i] = LogIntegral(xpoints[i], 10)
 
 plt.plot(xpoints, ypoints)
-plt.show()
 plt.savefig("Experiment11.png")
+plt.show()
 
