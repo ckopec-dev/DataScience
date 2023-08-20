@@ -8,6 +8,15 @@
 #
 #
 
-from Helper import *
+# https://mpmath.org/doc/current/functions/zeta.html
+from mpmath import *
 
-print(Zeta(-1, 8))
+z = zeta(-1+8j)
+
+print(z.real)
+print(z.imag)
+
+z = zeta(complex(-1,8))
+
+print(z.real)
+print(z.imag)

@@ -1,7 +1,7 @@
 #
 #
 #
-# Log Integral test
+# Log Integral graph
 #
 #
 #
