@@ -32,17 +32,6 @@ def mandelbrot(x, y, threshold):
         
     return threshold - 1  # it didn't diverge
 
-x_start, y_start = -2, -1.5  # an interesting region starts here
-width, height = 3, 3  # for 3 units up and right
-density_per_unit = 250  # how many pixles per unit
-
-# real and imaginary axis
-re = np.linspace(x_start, x_start + width, width * density_per_unit )
-im = np.linspace(y_start, y_start + height, height * density_per_unit)
-
-fig = plt.figure(figsize=(10, 10))  # instantiate a figure to draw
-ax = plt.axes()  # create an axes object
-
 def animate(i):
     ax.clear()  # clear axes object
     ax.set_xticks([], [])  # clear x-axis ticks
@@ -59,6 +48,17 @@ def animate(i):
     # associate colors to the iterations with an iterpolation
     img = ax.imshow(X.T, interpolation="bicubic", cmap='magma')
     return [img]
+
+x_start, y_start = -2, -1.5  # an interesting region starts here
+width, height = 3, 3  # for 3 units up and right
+density_per_unit = 250  # how many pixles per unit
+
+# real and imaginary axis
+re = np.linspace(x_start, x_start + width, width * density_per_unit )
+im = np.linspace(y_start, y_start + height, height * density_per_unit)
+
+fig = plt.figure(figsize=(10, 10))  # instantiate a figure to draw
+ax = plt.axes()  # create an axes object
  
 # This takes several seconds to execute...
 anim = animation.FuncAnimation(fig, animate, frames=45, interval=120, blit=True)
