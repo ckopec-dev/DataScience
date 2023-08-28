@@ -1,4 +1,4 @@
 
-# The Riemann Hypothesis
+# Data Science
 
-Miscellaneous experiments with the RH, L-functions, and so forth...
+Miscellaneous data science experiments...
