@@ -37,6 +37,7 @@ def create_data():
 				yvals.append(y)
 				#print(str(x) + "," + str(y) + "," + str(zr) + "," + str(zi))
 
+	# https://www.geeksforgeeks.org/python-append-to-a-file/
 	fileX = open("Experiment25_XData.txt", "a")  # append mode
 	fileX.write(str(xvals))
 	fileX.close()
@@ -45,7 +46,24 @@ def create_data():
 	fileY.write(str(yvals))
 	fileY.close()
 
-create_data()
+def read_data():
+	print("Loading zeta values...")
+
+	xvals = []
+	yvals = []
+
+	fileX = open("Experiment25_XData.txt", "r")
+	xvals = fileX.read()
+	fileX.close()
+
+	fileY = open("Experiment25_YData.txt", "r")
+	yvals = fileY.read()
+	fileY.close()
+	
+	return xvals, yvals
+
+#create_data()
+xvals, yvals = read_data()
 
 
 
