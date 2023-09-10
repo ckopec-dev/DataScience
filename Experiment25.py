@@ -44,4 +44,5 @@ for x in my_range(-10, 10, granularity):
 print ("Writing image to file: Experiment25.jpg")
 plt.plot(xvals, yvals, 'r.')
 plt.axis([-10,10,-5,35])
-plt.savefig('Experiment25.png') 
+#plt.savefig('Experiment25.png') 
+plt.show()
