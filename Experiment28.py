@@ -21,9 +21,9 @@ def create_data():
 	granularity = 0.01
 
 	# Takes quite a while to execute...
-	for x in my_range(-10, 10, granularity):
+	for x in MyRange(-10, 10, granularity):
 		print ("Computing for real values of " + str(x) + "...")
-		for y in my_range(-5, 35, granularity):
+		for y in MyRange(-5, 35, granularity):
 			z = zeta(x + y * i)
 			zr = z.real()
 			zi = z.imag()
