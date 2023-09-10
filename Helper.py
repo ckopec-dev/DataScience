@@ -47,3 +47,8 @@ def ComplexMatrix(xmin, xmax, ymin, ymax, pixel_density):
 def IsPure(c):
     # True if either the real or imaginary part is 0.
     return (math.isclose(c.real, 0, abs_tol = 0.001)) or (math.isclose(c.imag, 0, abs_tol = 0.001))
+
+def MyRange(start, end, step):
+    while start <= end:
+        yield start
+        start += step

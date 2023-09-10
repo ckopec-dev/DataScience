@@ -2,11 +2,7 @@ import sys
 import matplotlib.pyplot as plt
 from sage.all import *
 from pylab import * 
-
-def my_range(start, end, step):
-    while start <= end:
-        yield start
-        start += step
+from Helper import *
 
 def close(val):
 	# To be used to determine if a number is arbitrarily close to zero.
