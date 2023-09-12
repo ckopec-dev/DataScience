@@ -52,3 +52,11 @@ def MyRange(start, end, step):
     while start <= end:
         yield start
         start += step
+
+def NearZero(val, tolerance=0.01):
+	# To be used to determine if a number is arbitrarily close to zero.
+	# Change the numbers below to adjust the tightness.
+	if val >= -tolerance and val <= tolerance:
+		return true
+	else:
+		return false

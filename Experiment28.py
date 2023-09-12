@@ -4,14 +4,6 @@ from sage.all import *
 from pylab import * 
 from Helper import *
 
-def close(val):
-	# To be used to determine if a number is arbitrarily close to zero.
-	# Change the numbers below to adjust the tightness.
-	if val >= -0.01 and val <= 0.01:
-		return true
-	else:
-		return false
-
 def create_data():
 	print("Calculating zeta values...")
 
