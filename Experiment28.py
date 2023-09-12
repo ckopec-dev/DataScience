@@ -20,7 +20,7 @@ def create_data():
 			zr = z.real()
 			zi = z.imag()
 			
-			if close(zr) == true or close(zi) == true:
+			if NearZero(zr) == true or NearZero(zi) == true:
 				xvals.append(x)
 				yvals.append(y)
 				
@@ -62,7 +62,7 @@ def plot_data1(xvals, yvals):
 	plt.show()
 
 
-#create_data()
-xvals, yvals = read_data()
-plot_data1(xvals, yvals)
+create_data()
+#xvals, yvals = read_data()
+#plot_data1(xvals, yvals)
 
