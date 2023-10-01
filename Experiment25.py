@@ -12,9 +12,9 @@ def close(val):
 	# To be used to determine if a number is arbitrarily close to zero.
 	# Change the numbers below to adjust the tightness.
 	if val >= -0.01 and val <= 0.01:
-		return true
+		return True
 	else:
-		return false
+		return False
 
 print("Calculating zeta values...")
 
@@ -31,7 +31,7 @@ for x in my_range(-10, 10, granularity):
 		zr = z.real()
 		zi = z.imag()
 
-		if close(zr) == true or close(zi) == true:
+		if close(zr) == True or close(zi) == True:
 			xvals.append(x)
 			yvals.append(y)
 		  	#print str(x) + "," + str(y) + "," + str(zr) + "," + str(zi)
