@@ -63,6 +63,6 @@ def plot_data1(xvals, yvals):
 
 
 create_data()
-#xvals, yvals = read_data()
-#plot_data1(xvals, yvals)
+xvals, yvals = read_data()
+plot_data1(xvals, yvals)
 
